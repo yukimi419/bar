@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar VestiAura</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="slider-pro.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div id="header-left">
+          <img class="logo" src="photo/logo02.jpg">
+        </div>
+        <a href="mailto:bar.vestiaura@gmail.com">
+          <div id="ask">
+            お問い合わせはこちら
+          </div>
+        </a>
+        <br>
+        <br>
+        <div id="menu">
+          <ul>
+            <li>
+              <img class="menu-icon" id="top-btn" src="photo/top.jpg">
+            </li>
+            <li>
+              <a href="#concept"><img class="menu-icon mobile-none" src="photo/concept.jpg"></a>
+            </li>
+            <li>
+              <a href="#photo"><img class="menu-icon mobile-none" src="photo/photo.jpg"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div id="main">
+      <div class="container">
+        <div id="main-logo">
+          <img src="photo/topjogo.jpg">
+        </div>
+        <div id="main-text">
+          <img src="photo/top02.jpg">
+        </div>
+        <div id="main-chrge">
+          <img src="photo/chrge.jpg" >
+        </div>
+      </div>
+    </div>
+
+    <div id="concept">
+      <div class="border">
+        - concept -
+      </div>
+      <div class="container">
+        <img class="ph" src="photo/kodawari01.jpg">
+        <br>
+        <img class="allow01" src="photo/allow01.png">
+        <img class="ph concept02" src="photo/kodawari02.jpg"><br><br>
+        <img class="ph" src="photo/kodawari03.jpg">
+        <img class="allow02" src="photo/allow02.png">
+        <br>
+        <img class="allow01" src="photo/allow01.png">
+        <img class="ph concept04" src="photo/kodawari04.jpg"><br>
+      </div>
+    </div>
+
+    <div id="photo">
+      <div class="border">
+        - photo -
+      </div>
+      <div class="container">
+        <div class="slider-pro" id="slider1">
+          <div class="sp-slides">
+            <!-- Slide 1 -->
+            <div class="sp-slide">
+                <img class="sp-image" src="photo/photo03.jpg"/>
+            </div>
+            <!-- Slide 2 -->
+            <div class="sp-slide">
+                <img class="sp-image" src="photo/photo01.jpg"/>
+            </div>
+            <!-- Slide 3 -->
+            <div class="sp-slide">
+                <img class="sp-image" src="photo/photo02.jpg"/>
+            </div>
+            <!-- Slide 4 -->
+            <div class="sp-slide">
+                <img class="sp-image" src="photo/photo04.jpg"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="footer-text">
+          BAR VestiAura<br>
+          Copyright ©︎VestiAura All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+
+
+    <script>
+      $(document).ready(function(){
+          $( '#slider1' ).sliderPro({
+            wide: '80%',
+            responsive: true,
+            autoHeight: true,
+            arrows: true
+          });
+      });
+    </script>
+
+
+    <script src="jquery.sliderPro.min.js"></script>
+    <script src="sclipt.js"></script>
+  </body>
+</html>
