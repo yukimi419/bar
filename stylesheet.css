@@ -84,7 +84,6 @@ header a{
 }
 
 #main{
-  height: 900px;
   text-align: center;
 }
 
@@ -115,7 +114,6 @@ header a{
 }
 
 #concept{
-  height: 1900px;
 }
 
 .border{
@@ -124,6 +122,7 @@ header a{
   padding-left: 10px;
   background-color: rgb(90, 91, 93);
   margin-bottom: 20px;
+  margin-top: 100px;
 }
 
 .ph{
@@ -147,6 +146,10 @@ header a{
 .allow02{
   width: 150px;
   margin-bottom: 150px;
+}
+
+.clear{
+  clear: both;
 }
 
 #photo{

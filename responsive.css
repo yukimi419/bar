@@ -25,7 +25,7 @@
   }
 
   .logo{
-    width: 200px;
+    width: 230px;
     height: auto;
   }
 
@@ -42,4 +42,7 @@
     height: auto;
     margin-right: -20px;
     margin-top: -20px;
+  }
+
+
 }
