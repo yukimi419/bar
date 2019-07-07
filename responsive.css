@@ -1,0 +1,22 @@
+/* モバイル向けレイアウト */
+@media all and (max-width: 900px) {
+  .allow01{
+    margin-left: 30px;
+  }
+
+  .allow01,.allow02{
+    width: 120px;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .allow01,.allow02{
+    display: none;
+  }
+}
+
+@media all and (max-width: 710px) {
+  .mobile-none{
+    display: none;
+  }
+}
