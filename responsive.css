@@ -19,4 +19,17 @@
   .mobile-none{
     display: none;
   }
+
+  .logo{
+    width: 200px;
+    height: auto;
+  }
+
+  #ask{
+    display: none;
+  }
+
+  #m-ask{
+    display: block;
+  }
 }

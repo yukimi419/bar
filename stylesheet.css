@@ -51,6 +51,15 @@ header{
   opacity: 1;
 }
 
+#m-ask{
+  float: right;
+  background-color: rgb(11, 131, 242);
+  padding: 0px 3px;
+  border-radius: 5px;
+  font-size: 12px;
+  display: none;
+}
+
 header a{
   color: #fff;
 }
