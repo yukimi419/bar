@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN";
+  background-color: #000;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header{
+  background-color: #000;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+#header-left{
+  float: left;
+}
+
+.logo{
+  width: 300px;
+  height: 90px;
+  margin-left: 10px;
+}
+
+#ask{
+  float: right;
+  background-color: rgb(11, 131, 242);
+  padding: 0px 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-right: 28px;
+  opacity: 0.7;
+}
+
+#ask:hover{
+  opacity: 1;
+}
+
+#m-ask{
+  float: right;
+  background-color: rgb(11, 131, 242);
+  padding: 0px 3px;
+  border-radius: 5px;
+  font-size: 12px;
+  display: none;
+}
+
+header a{
+  color: #fff;
+}
+
+#menu{
+  float: right;
+}
+
+#menu li{
+  float: left;
+}
+
+.menu-icon{
+  width: 120px;
+  height: 35px;
+  opacity: 0.6;
+}
+
+.menu-icon:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+
+#main{
+  height: 900px;
+  text-align: center;
+}
+
+#main-logo{
+  margin-top: 130px;
+}
+
+#main-logo img{
+  max-width: 100%;
+}
+
+#main-text{
+  float: right;
+  margin-top: 30px;
+}
+
+#main-text img{
+  max-width: 100%;
+}
+
+#main-chrge{
+  float: right;
+  margin-right: 87px;
+}
+
+#main-chrge img{
+  max-width: 100%;
+}
+
+#concept{
+  height: 1900px;
+}
+
+.border{
+  color: #fff;
+  font-size: 30px;
+  padding-left: 10px;
+  background-color: rgb(90, 91, 93);
+  margin-bottom: 20px;
+}
+
+.ph{
+  margin-top: 10px;
+  margin-bottom: : 40px;
+  max-width: 100%;
+  width: 600px;
+  height: auto;
+}
+
+.concept02 ,.concept04{
+  float: right;
+}
+
+.allow01{
+  width: 150px;
+  margin-top: 100px;
+  margin-left: 150px;
+}
+
+.allow02{
+  width: 150px;
+  margin-bottom: 150px;
+}
+
+#photo{
+  height: 500px;
+}
+
+footer{
+  background-color: rgb(53, 56, 56);
+  height: 80px;
+}
+
+.footer-text{
+  padding-top: 20px;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+}
