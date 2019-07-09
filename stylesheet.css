@@ -227,6 +227,9 @@ header a{
 .map-min{
   text-align: center;
   display: none;
+}
+
+.map-mobile{
   max-width: 100%;
 }
 
