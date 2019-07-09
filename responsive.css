@@ -1,39 +1,23 @@
 /* モバイル向けレイアウト */
 @media all and (max-width: 900px) {
-  .allow01{
-    margin-left: 30px;
-  }
 
-  .allow01,.allow02{
-    width: 120px;
-  }
 }
 
 @media all and (max-width: 750px) {
-  .allow01,.allow02{
-    display: none;
-  }
+
 }
 
-@media all and (max-width: 710px) {
-  .mobile-none{
+@media all and (max-width: 660px) {
+
+  .menu-icon{
     display: none;
-  }
-
-  header{
-    height: 85px;
-  }
-
-  .logo{
-    width: 230px;
-    height: auto;
   }
 
   #ask{
     display: none;
   }
 
-  #m-ask{
+  .mobile{
     display: block;
   }
 
@@ -44,5 +28,65 @@
     margin-top: -20px;
   }
 
+  .main-waku{
+    float: none;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  #main-text{
+    float: none;
+  }
+
+  #main-text h1,h2{
+    text-align: center;
+  }
+
+  #main-text h1{
+    font-size: 15px;
+  }
+
+  #main-text h2{
+    font-size: 14px;
+  }
+
+  .ph{
+    width: 350px;
+  }
+
+  .img-box{
+    margin: 0 10px;
+  }
+
+  .img-box p{
+    font-size: 14px;
+  }
+
+  .slider-pro{
+    float: none;
+    padding-left: 0px;
+  }
+
+  .photo-left,.photo-right{
+    display: none;
+  }
+
+  #access{
+    height: 640px;
+  }
+
+  .map{
+    display: none;
+  }
+
+  .map-min{
+    display: block;
+  }
+
+  .access-text{
+    text-align: center;
+    width: 90%;
+    font-size: 15px;
+  }
 
 }

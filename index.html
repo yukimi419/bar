@@ -8,21 +8,36 @@
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="slider-pro.min.css"/>
+    <link rel="stylesheet" href="drawer.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
   </head>
 
-  <body>
+  <body class="drawer drawer--right">
     <header>
       <div class="container">
         <div id="header-left">
-          <img class="logo" src="photo/logo02.jpg">
+          <img class="logo" src="photo/logo.png">
+        </div>
+        <div class="mobile">
+          <button type="button" class="drawer-toggle drawer-hamburger">
+            <span class="sr-only">toggle navigation</span>
+            <span class="drawer-hamburger-icon"></span>
+        </button>
+          </button>
+          <nav class="drawer-nav" role="navigation">
+            <ul class="drawer-menu">
+              <li><a class="drawer-menu-item top-btn" href="#">top</a></li>
+              <li><a class="drawer-menu-item" href="#concept">concept</a></li>
+              <li><a class="drawer-menu-item" href="#photo">photo</a></li>
+              <li><a class="drawer-menu-item" href="#access">access</a></li>
+              <li><a class="drawer-menu-item" href="mailto:bar.vestiaura@gmail.com">ask</a></li>
+            </ul>
+          </nav>
         </div>
         <a href="mailto:bar.vestiaura@gmail.com">
           <div id="ask">
             お問い合わせはこちら
-          </div>
-          <div id="m-ask">
-            お問い合わせ
           </div>
         </a>
         <br>
@@ -30,13 +45,16 @@
         <div id="menu">
           <ul>
             <li>
-              <img class="menu-icon" id="top-btn" src="photo/top.jpg">
+              <div class="menu-icon top-btn" >top</div>
             </li>
             <li>
-              <a href="#concept"><img class="menu-icon mobile-none" src="photo/concept.jpg"></a>
+              <a href="#concept"><div class="menu-icon">concept</div></a>
             </li>
             <li>
-              <a href="#photo"><img class="menu-icon mobile-none" src="photo/photo.jpg"></a>
+              <a href="#photo"><div class="menu-icon">photo</div></a>
+            </li>
+            <li>
+              <a href="#access"><div class="menu-icon">access</div></a>
             </li>
           </ul>
         </div>
@@ -48,11 +66,17 @@
         <div id="main-logo">
           <img src="photo/topjogo.jpg">
         </div>
-        <div id="main-text">
-          <img src="photo/top02.jpg">
+        <div class="main-waku">
+          <img src="photo/green01.png">
         </div>
-        <div id="main-chrge">
-          <img src="photo/chrge.jpg" >
+        <div id="main-text">
+          <h1>当店はrelax、luxuy、healthyがコンセプトの落ち着いたBarです。<br>
+          都会にいながら都会の喧噪を忘れられる非日常空間でおくつろぎください。</h1>
+          <br>
+          <h2>営業時間　　19:00〜5:00　年中無休（年末年始、臨時休業有り）</h2>
+        </div>
+        <div class="main-waku">
+          <img src="photo/green02.png">
         </div>
       </div>
       <div class="clear"></div>
@@ -63,15 +87,34 @@
         - concept -
       </div>
       <div class="container">
-        <img class="ph" src="photo/kodawari01.jpg">
+        <div class="img-box">
+          <img class="ph" src="photo/kodawari01.jpg">
+          <p>店内では、本場バリより直輸入しております<span>アロマオイル</span>を炊き、<br>
+          <span>ヒーリング効果</span>を高める空間を提供させていただいております。</p>
+        </div>
         <br>
-        <img class="allow01" src="photo/allow03.png">
-        <img class="ph concept02" src="photo/kodawari02.jpg"><br><br>
-        <img class="ph" src="photo/kodawari03.jpg">
-        <img class="allow02" src="photo/allow04.png">
+        <div class="img-box">
+          <img class="ph" src="photo/kodawari02.jpg">
+          <p>チャージ料金内のサービスで、<br>
+          自家製のフレッシュな生野菜や果物をミキサーにかけた<span>スムージー</span>と、<br>
+          <span>ドライフルーツ</span>を提供させていただいております。<br>
+          日々不足しがちな栄養素をアルコールよりも先にお召し上がりいただき、<br>
+          お体をご自愛いただければと思います。</p>
+        </div>
         <br>
-        <img class="allow01" src="photo/allow03.png">
-        <img class="ph concept04" src="photo/kodawari04.jpg"><br>
+        <div class="img-box">
+          <img class="ph" src="photo/kodawari03.jpg">
+          <p>国内でも有数の一流ホテル内BARにて修行をしたバーテンダーが常勤しております。<br>
+          <span>100種類近くある質の高いカクテル</span>をぜひお楽しみください。</p>
+        </div>
+        <br>
+        <div class="img-box">
+          <img class="ph concept04" src="photo/kodawari04.jpg">
+          <p>ダーツ、カラオケ（歌い放題無料）各種取り揃えておりますので、<br>
+          <span>貸切でのパーティー利用</span>にもご対応できます。<br>
+          お気軽にご相談くださいませ。</p>
+        </div>
+        <br>
       </div>
       <div class="clear"></div>
     </div>
@@ -81,31 +124,63 @@
         - photo -
       </div>
       <div class="container">
-        <div class="slider-pro" id="slider1">
-          <div class="sp-slides">
-            <!-- Slide 1 -->
-            <div class="sp-slide">
-                <img class="sp-image" src="photo/photo03.jpg"/>
-            </div>
-            <!-- Slide 2 -->
-            <div class="sp-slide">
-                <img class="sp-image" src="photo/photo01.jpg"/>
-            </div>
-            <!-- Slide 3 -->
-            <div class="sp-slide">
-                <img class="sp-image" src="photo/photo02.jpg"/>
-            </div>
-            <!-- Slide 4 -->
-            <div class="sp-slide">
-                <img class="sp-image" src="photo/photo04.jpg"/>
+        <div class="container-min">
+          <div class="photo-left">
+            <img src="photo/green03.png">
+          </div>
+          <div class="slider-pro" id="slider1">
+            <div class="sp-slides">
+              <!-- Slide 1 -->
+              <div class="sp-slide">
+                  <img class="sp-image" src="photo/photo03.jpg"/>
+              </div>
+              <!-- Slide 2 -->
+              <div class="sp-slide">
+                  <img class="sp-image" src="photo/photo01.jpg"/>
+              </div>
+              <!-- Slide 3 -->
+              <div class="sp-slide">
+                  <img class="sp-image" src="photo/photo02.jpg"/>
+              </div>
+              <!-- Slide 4 -->
+              <div class="sp-slide">
+                  <img class="sp-image" src="photo/photo04.jpg"/>
+              </div>
             </div>
           </div>
+          <div class="photo-right">
+            <img src="photo/green04.png">
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+
+    <div id="access">
+      <div class="border">
+        - access -
+      </div>
+      <div class="container">
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1923.0112922752721!2d139.70330823156928!3d35.697434417712856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cd8964109bb%3A0xff971b39162eb75e!2z44CSMTYwLTAwMjEg5p2x5Lqs6YO95paw5a6_5Yy65q2M6Iie5LyO55S677yS5LiB55uu77yR77yY4oiS77yW!5e0!3m2!1sja!2sjp!4v1562612198773!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="map-min">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.170095851536!2d139.70291021456796!3d35.6974316366921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cd8964109bb%3A0xff971b39162eb75e!2z44CSMTYwLTAwMjEg5p2x5Lqs6YO95paw5a6_5Yy65q2M6Iie5LyO55S677yS5LiB55uu77yR77yY4oiS77yW!5e0!3m2!1sja!2sjp!4v1562660055036!5m2!1sja!2sjp" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="access-text">
+          <p>東京メトロ副都心線、都営大江戸線　東新宿駅　徒歩２分</p>
+          <p><span>住所</span><br>東京都新宿区歌舞伎町２−１８−６ニッコウビル７F</p>
+          <p><span>電話番号</span><br>03-3203-6785</p>
         </div>
       </div>
     </div>
 
     <footer>
       <div class="container">
+        <div class="footer-logo">
+          <img src="photo/hotpepper-w130.png">
+          <img src="photo/twitter.png">
+        </div>
         <div class="footer-text">
           BAR VestiAura<br>
           Copyright ©︎VestiAura All Rights Reserved.
@@ -117,15 +192,19 @@
     <script>
       $(document).ready(function(){
           $( '#slider1' ).sliderPro({
-            wide: '80%',
+            width: 500,
             responsive: true,
             autoHeight: true,
             arrows: true
           });
       });
+
+      $(document).ready(function() {
+        $('.drawer').drawer();
+      });
     </script>
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/js/drawer.min.js"></script>
     <script src="jquery.sliderPro.min.js"></script>
     <script src="sclipt.js"></script>
   </body>

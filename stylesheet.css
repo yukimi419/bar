@@ -6,10 +6,15 @@ body {
   margin: 0;
   font-family: "Hiragino Kaku Gothic ProN";
   background-color: #000;
+
 }
 
 a {
   text-decoration: none;
+}
+
+li {
+  list-style: none;
 }
 
 .container {
@@ -19,7 +24,8 @@ a {
 }
 
 header{
-  background-color: #000;
+  background-color: rgb(29, 30, 31);
+  opacity: 0.9;
   height: 100px;
   width: 100%;
   position: fixed;
@@ -32,7 +38,7 @@ header{
 }
 
 .logo{
-  width: 300px;
+  width: 200px;
   height: 90px;
   margin-left: 10px;
 }
@@ -51,15 +57,6 @@ header{
   opacity: 1;
 }
 
-#m-ask{
-  float: right;
-  background-color: rgb(11, 131, 242);
-  padding: 0px 3px;
-  border-radius: 5px;
-  font-size: 12px;
-  display: none;
-}
-
 header a{
   color: #fff;
 }
@@ -73,14 +70,19 @@ header a{
 }
 
 .menu-icon{
-  width: 120px;
-  height: 35px;
+  color: #fff;
+  font-size: 25px;
   opacity: 0.6;
+  margin-right: 20px;
 }
 
 .menu-icon:hover{
   opacity: 1;
   cursor: pointer;
+}
+
+.mobile{
+  display: none;
 }
 
 #main{
@@ -95,14 +97,37 @@ header a{
   max-width: 100%;
 }
 
-#main-text{
+.main-waku{
   float: right;
-  margin-top: 30px;
+  margin-top: 40px;
+  margin-bottom: 30px;
 }
 
-#main-text img{
+.main-waku img{
+  width: 600px;
+  height: 60px;
   max-width: 100%;
+  opacity: 0.8;
 }
+
+#main-text{
+  float: right;
+}
+
+#main-text h1,h2{
+  color: #fff;
+  font-weight: normal;
+  text-align: left;
+}
+
+#main-text h1{
+  font-size: 17px;
+}
+
+#main-text h2{
+  font-size: 16px;
+}
+
 
 #main-chrge{
   float: right;
@@ -114,40 +139,42 @@ header a{
 }
 
 #concept{
+  background-color: rgb(34, 34, 34);
 }
 
 .border{
   color: #fff;
   font-size: 30px;
-  padding-left: 10px;
+  padding-left: 20px;
   background-color: rgb(90, 91, 93);
   margin-bottom: 20px;
-  margin-top: 100px;
+}
+
+.img-box{
+  text-align: center;
+  margin: 0 100px;
+}
+
+.img-box p{
+  color: #fff;
+  margin-top: -75px;
+  font-size: 15px;
+  border: #fff solid 1px;
+  padding-top: 90px;
+  padding-bottom: 30px;
+  border-radius: 15px;
+  background-color: rgb(51, 52, 54);
+}
+
+.img-box span{
+  border-bottom: rgb(13, 54, 231, 0.7) solid 7px;
+  font-weight: bold;
 }
 
 .ph{
   margin-top: 10px;
-  margin-bottom: : 40px;
-  max-width: 100%;
-  width: 600px;
+  width: 450px;
   height: auto;
-}
-
-.concept02 ,.concept04{
-  float: right;
-}
-
-.allow01{
-  width: 150px;
-  margin-top: 100px;
-  margin-left: 150px;
-  opacity: 0.8;
-}
-
-.allow02{
-  width: 150px;
-  margin-bottom: 150px;
-  opacity: 0.8;
 }
 
 .clear{
@@ -155,17 +182,86 @@ header a{
 }
 
 #photo{
-  height: 500px;
+  height: 550px;
+}
+
+.container-min {
+  max-width: 670px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.slider-pro{
+  padding-top: 30px;
+  padding-left: 15px;
+  float: left;
+}
+
+.photo-left{
+  float: left;
+}
+
+.photo-left img{
+  height: 420px;
+  width: auto;
+}
+
+.photo-right{
+  float: right;
+}
+
+.photo-right img{
+  height: 420px;
+  width: auto;
+}
+
+#access{
+    background-color: rgb(34, 34, 34);
+    height: 800px;
+}
+
+.map{
+  text-align: center;
+}
+
+.map-min{
+  text-align: center;
+  display: none;
+}
+
+.access-text{
+  margin: 0 auto;
+  width: 660px;
+  color: #fff;
+  border: #fff solid 2px;
+  border-radius: 15px;
+  background-color: rgb(51, 52, 54);
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.access-text span{
+  border-bottom: rgb(13, 54, 231, 0.7) solid 7px;
+  font-weight: bold;
 }
 
 footer{
   background-color: rgb(53, 56, 56);
-  height: 80px;
+  height: 130px;
+  text-align: center;
+}
+
+.footer-logo{
+  padding-top: 10px;
+}
+
+.footer-logo img{
+  width: 45px;
+  height: 45px;
 }
 
 .footer-text{
-  padding-top: 20px;
-  text-align: center;
+  padding-top: 10px;
   font-size: 12px;
   color: #fff;
 }
