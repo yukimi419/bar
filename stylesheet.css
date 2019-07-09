@@ -227,6 +227,7 @@ header a{
 .map-min{
   text-align: center;
   display: none;
+  max-width: 100%;
 }
 
 .access-text{
