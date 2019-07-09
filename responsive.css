@@ -55,7 +55,8 @@
   }
 
   .img-box p{
-    font-size: 14px;
+    font-size: 12px;
+    text-align: left;
   }
 
   .slider-pro{
@@ -82,7 +83,7 @@
   .access-text{
     text-align: center;
     width: 90%;
-    font-size: 15px;
+    font-size: 13px;
   }
 
 }
