@@ -17,6 +17,15 @@
     display: block;
   }
 
+  .logo{
+    width: 150px;
+    height: 65px;
+  }
+
+  header{
+    height: 70px;
+  }
+
   .menu-icon{
     width: 100px;
     height: auto;
@@ -48,6 +57,7 @@
 
   .border{
     font-size: 20px;
+    font-weight: bold;
   }
 
   .ph{
